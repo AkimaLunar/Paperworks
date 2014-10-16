@@ -1,5 +1,5 @@
 # Paperworks
-## redesign of an online store
+**redesign of an online store**
 v1
 
 **What I've used**
