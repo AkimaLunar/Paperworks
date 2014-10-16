@@ -1,0 +1,67 @@
+header.navigation {
+	height: em(64);
+	padding-top: em(8);
+	//background-color: #E5FFF9;
+	background-color: lighten($base-accent-color, 32%);
+	border-bottom: 1px solid lighten($base-accent-color, 25%);
+	box-shadow: $base-shadow;
+	ul {
+		li {
+			display: inline-block;
+		}
+	}
+}
+.navigation-home {
+	padding-left: em(12);
+	@include span-columns(3);
+}
+.primary-navigation {
+	@include span-columns(6);
+	margin: em(16) 0;
+	li {
+		a {
+			border-right: $base-border;
+			padding: 0 em(20);
+			font-size: 1em;
+			color: $base-font-color;
+		}
+		&:first-of-type {
+			a {
+				border-left: $base-border;
+			}
+		}
+
+		&:last-of-type {
+			a {
+				border-right: none;
+			}
+		}
+	}
+	
+}
+
+.secondary-navigation {
+	@include span-columns(3);
+	@include omega;
+	float: right;
+	margin: em(4) 0;
+	li {
+		width: em(120);
+		text-align: center;
+		@extend %button;
+		@include appearance(none);
+		border: none;
+		cursor: pointer;
+		user-select: none;
+		vertical-align: middle;
+		white-space: nowrap;
+		@include transition (all .2s ease-in-out);
+	}
+	a {
+		color: white;
+	}
+	span {
+		margin-right: em(8);
+	    font-size: 1.2em;
+	}
+}

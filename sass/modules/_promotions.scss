@@ -1,0 +1,33 @@
+@mixin include-background-image($image) {
+	background-image: url('../assets/' + $image + '.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.french-collection {
+	@include include-background-image(french-collection)
+}
+
+.letterpress-collection {
+	@include include-background-image(letterpress-collection)
+}
+.color-collection {
+	@include include-background-image(color-collection)
+}
+.environment-collection {
+	@include include-background-image(environment-collection)
+}
+.covers-collection {
+	@include include-background-image(covers-collection)
+}
+.publishing-collection {
+	@include include-background-image(publishing-collection)
+}
+
+.pantone {
+	background: rgb(77,16,131)
+}
+
+.rewards-programm-promo {
+	background: $base-accent-color;
+}

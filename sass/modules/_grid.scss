@@ -1,0 +1,96 @@
+.grid-items {
+  $grid-items-background: white;
+  $grid-item-background: desaturate($base-accent-color, 30);
+  $grid-item-color: white;
+  $grid-item-height: 16em;
+
+  @include clearfix;
+    
+  .grid-item {
+    margin-bottom: em(16);
+    @include transition (all 0.2s ease-in-out);
+    height: $grid-item-height;
+    //background: $grid-item-background;
+    width: 100%;
+    overflow: hidden;
+    float: left;
+    padding: 2em;
+    text-align: center;
+    cursor: pointer;
+    border: $base-border;
+    box-shadow: $base-shadow;
+
+    @include media($large-screen) {
+      @include span-columns(4);
+    }
+    strong {
+      font-size: 2em;
+    }
+  }
+  
+  .grid-item img {
+      display: block;
+      margin: auto;
+      margin-bottom: 1em;
+    }
+
+  .grid-item h1 {
+      color: $grid-item-color;
+      font-size: 1.3em;
+      margin-bottom: .4em;
+    }
+
+  .grid-item p {
+      margin: auto;
+      margin-bottom: 2em;
+      color: transparentize($grid-item-color, .3);
+      @include media($medium-screen) {
+      }
+    }
+
+  .grid-item-big {
+    @include media($large-screen) {
+      @include span-columns(8);
+    }
+    p {
+      @include media($medium-screen) {
+        max-width: 60%;
+      }  
+    }
+  }
+
+  .grid-item-jumbo {
+    @include media($large-screen) {
+      @include span-columns(12);
+    }
+    p {
+      @include media($medium-screen) {
+        max-width: 70%;
+      }  
+    }
+  }
+
+  .grid-item-products {
+    padding: 1em;
+    background: white;
+    @include media($large-screen) {
+      @include span-columns(12);
+    }
+  }
+
+  .grid-item-omega {
+    @include media($large-screen) {
+      @include omega;
+    }
+  }
+
+  figure {
+    @include span-columns(6);
+    @include media($large-screen) {
+      @include span-columns(3);
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

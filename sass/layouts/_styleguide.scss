@@ -1,0 +1,48 @@
+section.style-guide {
+	@include outer-container;
+	padding-top: em(60);
+	hr {
+		margin: $base-spacing / 2 0 $base-spacing 0;	
+	}
+	h6 {
+		margin: $base-spacing 0 $base-spacing / 2 0;
+	}
+}
+
+ul.sg-colors {
+	@include clearfix;
+
+	li {
+		display: inline-block;
+		@include span-columns(2);
+		height: em(140);
+	}
+}
+
+.sg-color1 {
+	background-color: $base-accent-color;
+}
+
+.sg-color2 {
+	background-color: $dark-gray;
+}
+
+.sg-color3 {
+	background-color: $medium-gray;
+}
+
+.sg-color4 {
+	background-color: $light-gray;
+}
+
+.sg-color5 {
+	background-color: $light-green;
+}
+
+.sg-color6 {
+	background-color: $light-yellow;
+}
+
+.sg-color7 {
+	background-color: $light-red;
+}
