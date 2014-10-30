@@ -94,3 +94,18 @@
     }
   }
 }
+
+
+//MOBILE
+.promo-mobile {
+  display: none;
+  width: 100%;
+  margin: 0;
+  padding: em(34) em(28) em(14) em(28);
+  height: em(180);
+  color: transparentize(white, 0.2);
+  h1 {
+    font-size: 1.6em;
+  }
+}
+

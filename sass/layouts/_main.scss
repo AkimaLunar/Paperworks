@@ -3,19 +3,24 @@ html, body {
 }
 
 main {
-	@include span-columns(9);
-	border-right: $base-border;
-	margin-right: 0;
-	padding: em(16);
+	@include media($medium-screen-up) {
+		@include span-columns(9);
+		border-right: $base-border;
+		margin-right: 0;
+		padding: em(16);
+	}
 }
 
 aside {
-	@include span-columns(3);
-	@include omega;
-	height:100%;
-	width: 25.63%;
+	@include span-columns(12);
+	@include media($medium-screen-up) {
+		@include span-columns(3);
+		@include omega;
+		height:100%;
+		width: 25.63%;
 	//border-right: $base-border;
 	//border-left: $base-border;
+	}
 }
 
 .wrapper {
