@@ -426,13 +426,20 @@ header.navigation {
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out; }
+    @media screen and (max-width: 68.75em) {
+      .secondary-navigation li {
+        padding: 0.75em 0.375em; } }
   .secondary-navigation a {
     color: white; }
   .secondary-navigation span {
     margin-right: 0.5em;
     font-size: 1.2em; }
+  @media screen and (max-width: 68.75em) {
+    .secondary-navigation {
+      padding-right: 0.75em; } }
   @media screen and (max-width: 40em) {
     .secondary-navigation {
+      padding-right: 0;
       float: left;
       display: block;
       margin-right: 5.15464%;
