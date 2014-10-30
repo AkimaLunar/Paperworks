@@ -60,14 +60,37 @@ $aside-left: 26px;
   &:first-of-type {
     border-top: none;
   }
+  @include media($medium-screen-down) {
+    background-color: lighten($light-gray, 10%);
+    text-align: center;
+    padding: em(4) 0;
+    border-top: none;
+  } 
 }
 
 .aside-links-block {
   padding: em(8) $aside-left em(16) $aside-left;
   //border-bottom: $base-border;
+
+  @include media($medium-screen-down) {
+    padding: 0;
+  }
   h6 {
     text-align: left;
     margin-bottom: em(4);
+    @include media($medium-screen-down) {
+      padding: em(16) em(26) 0 em(26);
+      text-align: center;
+      border-top: $base-border;
+      &:first-of-type {
+        border-top: none;
+      }
+      & + a {
+        padding: em(8) em(26);
+        display: block;
+        text-align: center;
+      }
+    }
   }
   ul {
     text-align: left;
@@ -78,9 +101,24 @@ $aside-left: 26px;
     margin-right: em(8);
     font-size: 1.2em;
   }
+
+  li {
+    @include media($medium-screen-down) {
+      height: em(44);
+      border-bottom: $base-border;
+      padding: em(8) em(26);
+    }
+  }
 }
 .aside-more-links {
   color: $medium-gray;
+  @include media($medium-screen-down) {
+    display: block;
+    width: 100%;
+    padding: em(8) em(26);
+    height: em(44);
+    border-bottom: $base-border;
+  }
 }
 
 

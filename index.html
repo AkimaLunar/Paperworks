@@ -27,24 +27,34 @@
 <!-- HEADER: Start -->
 <header class="navigation">
     <div class="wrapper">
-        <div class="navigation-home"><a class="paperworks-logo" href="#">Paperworks</a></div>
+        <div class="navigation-home">
+          <a class="paperworks-logo" href="#">Paperworks</a>
+        </div>
         <ul class="primary-navigation">
             <li><a href="#">Retail Locations</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Help</a></li>
         </ul>
         <ul class="secondary-navigation">
-            <li><a href="#" class="button"><span class="entypo-basket"></span>Cart (0)</a></li>
-            <li><a href="#" class="button"><span class="entypo-mouse"></span>Sign Up</a></li>
+            <li><a href="#"><span class="entypo-basket"></span>Cart (0)</a></li>
+            <li><a href="#"><span class="entypo-mouse"></span>Sign Up</a></li>
         </ul>
     </div>
 </header>
 <!-- HEADER: End -->
 
+<!--MOBILE HEADER: Start -->
+<div class="promo-mobile letterpress-collection" id="promo-mobile">
+
+    <h1>A unique <strong>marketplace</strong>. <br /> Find perfect<strong> paper </strong>for your next project</h1>
+</div>
+
+<!--MOBILE HEADER: End -->
+
 <!-- WRAPPER: Start -->
 <div class="wrapper frame">
 <!-- MAIN: Start -->
-<main>
+<main class="main-grid">
     <div class="grid-items">
     <!--row 1 -->
     <a href="javascript:void(0)" class="grid-item grid-item-jumbo grid-item-omega environment-collection">
@@ -234,6 +244,9 @@
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script>
+      responsiveTopNavigation();
+    </script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
